@@ -1,0 +1,739 @@
+.HomeView {
+  overflow: hidden;
+}
+.HomeView .topContainer {
+  background: linear-gradient(180deg, #0f0f0f 0%, #123d46 100%);
+}
+.HomeView .topContainer .top {
+  display: flex;
+}
+.HomeView .topContainer .top .text {
+  width: 44.125rem;
+}
+.HomeView .topContainer .top .text h1 {
+  /* IBM Plex Mono/56px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--tranching-color-main-gradient-tranching, #fff);
+}
+.HomeView .topContainer .top .text h1 span {
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView .topContainer .top .text .des {
+  color: #fff;
+  /* DM Sans/32px: Bold */
+  font-family: DM Sans;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.HomeView .topContainer .top .text button {
+  width: 14.5rem;
+  height: 3rem;
+  border: 1px solid #fff;
+  background: linear-gradient(270deg, rgba(93, 149, 250, 0.8) 0%, rgba(0, 216, 252, 0.8) 100%);
+  color: var(--white, #fff);
+  font-family: IBM Plex Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.HomeView .topContainer .top .imgs {
+  width: 43.8125rem;
+  margin-top: -4rem;
+}
+.HomeView .topContainer .top .imgs img {
+  width: 100%;
+}
+.HomeView .topContainer .Ecosystem {
+  margin-top: 3rem;
+  display: flex;
+  padding-bottom: 8.1875rem;
+}
+.HomeView .topContainer .Ecosystem .imgs .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5.9375rem;
+}
+.HomeView .topContainer .Ecosystem .imgs .title .line {
+  display: block;
+  width: 22.4375rem;
+  border-top: 2px dashed #fff;
+}
+.HomeView .topContainer .Ecosystem .imgs img {
+  width: 38.0625rem;
+}
+.HomeView .topContainer .Ecosystem .text {
+  margin-left: 1.25rem;
+}
+.HomeView .topContainer .Ecosystem .text .title {
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.375rem;
+}
+.HomeView .topContainer .Ecosystem .text p {
+  margin-bottom: 1.375rem;
+}
+.HomeView .topContainer .Ecosystem .text .des {
+  color: #fff;
+  /* DM Sans/16px: Regular */
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.HomeView .topContainer .Ecosystem .text .t span {
+  color: #fff;
+  /* IBM Plex Mono/18px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.HomeView .topContainer .Ecosystem .text ol {
+  margin-left: 1.25rem;
+}
+.HomeView .topContainer .Ecosystem .text ol li {
+  list-style-type: auto;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.HomeView .Pools {
+  background: #1e1e1e;
+  padding: 4.0625rem 6.25rem;
+  height: 76.6875rem;
+  position: relative;
+}
+.HomeView .Pools .code_ {
+  position: absolute;
+  opacity: 0.4;
+  margin: 2rem 2rem;
+  color: #fff;
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView .Pools .tops {
+  margin-top: -5.5rem;
+}
+.HomeView .Pools .tops .content {
+  position: relative;
+}
+.HomeView .Pools .tops .content .sequence {
+  left: 0;
+  position: absolute;
+  margin-top: 1.875rem;
+}
+.HomeView .Pools .tops .content .sequence p {
+  color: rgba(131, 134, 142, 0.51);
+  font-family: Prompt;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.HomeView .Pools .tops .content .box .tab {
+  margin: 0 auto;
+  padding-top: 10.875rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_top {
+  width: 57.5rem;
+  height: 3.3125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #fff;
+  margin: 0 auto;
+}
+.HomeView .Pools .tops .content .box .tab .tab_top span {
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  /* DM Sans/16px: Medium */
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  height: 3.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomeView .Pools .tops .content .box .tab .tab_top .active {
+  background-color: #fff;
+  color: #1d3661;
+}
+.HomeView .Pools .tops .content .box .tab .tab_top span:first-child {
+  width: 11.375rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_top span:nth-child(2) {
+  width: 33.625rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_top span:nth-child(3) {
+  width: 11.375rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item .title {
+  text-align: center;
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 3.8rem 0;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item .code {
+  opacity: 0.4;
+  margin-top: 3.5rem;
+  margin-left: 4rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item .code code {
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBMPlexMono-Light;
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 130%; /* 23.4px */
+  color: #fff;
+  font-weight: 500;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item .cd {
+  margin-left: 10rem;
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:first-child .row {
+  display: flex;
+  align-items: center;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:first-child .row .imgs {
+  margin-left: 8rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:first-child .row .imgs img {
+  width: 17.25rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:first-child .row .text {
+  width: 44.5625rem;
+  margin-left: 2.8125rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:first-child .row .text ul li {
+  margin-bottom: 1.875rem;
+  color: #fff;
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:first-child .row .text .f {
+  text-align: left;
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(2) .row,
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 5rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(2) .row .col,
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col {
+  width: 19.875rem;
+  text-align: center;
+  color: #fff;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(2) .row .col .text,
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col .text {
+  display: flex;
+  min-height: 7.5rem;
+  margin-top: 1.5rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(2) .row .col:nth-child(1), .HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(2) .row .col:nth-child(2), .HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(2) .row .col:nth-child(3),
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col:nth-child(1),
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col:nth-child(2),
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col:nth-child(3) {
+  margin-bottom: 5.625rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col {
+  width: 22rem;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col .title_s {
+  color: #fff;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col .text {
+  display: block !important;
+}
+.HomeView .Pools .tops .content .box .tab .tab_text .item:nth-child(3) .row .col .text .title_s {
+  margin-bottom: 1.5rem;
+}
+.HomeView .strategy {
+  height: 30.5rem;
+  background-image: url("../static/images/Group 57.png");
+  background-size: contain;
+  padding: 5.125rem 0;
+}
+.HomeView .strategy .box {
+  width: 43.1875rem;
+  margin: 0 auto;
+}
+.HomeView .strategy .box h1 {
+  color: var(--white, #fff);
+  text-align: center;
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2.625rem;
+}
+.HomeView .strategy .box div {
+  color: var(--layer-4, #fff);
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView .strategy .box div p:first-child {
+  margin-bottom: 1.875rem;
+}
+.HomeView #Pools_ {
+  height: 61.1875rem;
+}
+.HomeView #Pools_ .tops .code_ {
+  position: absolute;
+  opacity: 0.4;
+  margin: 2.5rem 2rem;
+  color: #fff;
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView #Pools_ .tops .content .box .tab {
+  padding-top: 6rem !important;
+}
+.HomeView #Pools_ .tops .content .box .tab .tab_text .item .code_top {
+  margin-left: 3rem;
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+  color: #fff;
+  margin-bottom: 3.5rem;
+}
+.HomeView #Pools_ .tops .content .box .tab .tab_text .item .row .text {
+  width: 100% !important;
+  min-height: 16.5rem;
+  margin-top: 2.8125rem;
+}
+.HomeView #Pools_ .tops .content .box .tab .tab_text .item .row .col {
+  margin-right: 2.375rem;
+  width: 15.3125rem !important;
+  color: #fff;
+}
+.HomeView #Pools_ .tops .content .box .tab .tab_text .item .row .col img {
+  width: auto !important;
+}
+.HomeView .Protocols {
+  width: 100%;
+  height: 68.25rem;
+  background-image: url("../static/images/Group 51.png");
+  background-size: contain;
+  padding: 5.25rem 6.25rem;
+}
+.HomeView .Protocols .title {
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 2.125rem 0 1.5rem 0;
+}
+.HomeView .Protocols .cds {
+  color: var(--white, #fff);
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+  margin-bottom: 1.5rem;
+}
+.HomeView .Protocols .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.HomeView .Protocols .box .item {
+  width: 35.625rem;
+  display: flex;
+}
+.HomeView .Protocols .box .item .text {
+  margin-left: 3.375rem;
+  color: #fff;
+}
+.HomeView .Protocols .box .item .text .title_s {
+  color: var(--layer-5, #dba0db);
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView .Protocols .box .item .text .des {
+  margin-top: 1rem;
+  color: var(--white, #fff);
+  /* DM Sans/16px: Regular */
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.HomeView .Protocols .cd {
+  margin-top: 2.5rem;
+  margin-bottom: 2.3125rem;
+  margin-left: 0rem;
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView .Protocols .list_s {
+  width: 77.5625rem;
+  height: 18.0625rem;
+  background: rgba(30, 30, 30, 0.4);
+  padding: 1.875rem 3.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.HomeView .Protocols .list_s .left {
+  width: 29.0625rem;
+}
+.HomeView .Protocols .list_s .left h2 {
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView .Protocols .list_s .left .des {
+  color: var(--white, #fff);
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+  margin: 1rem 0;
+}
+.HomeView .Protocols .list_s .right {
+  width: 37.5rem;
+}
+.HomeView .Protocols .list_s .right .tab .tab_title {
+  display: flex;
+  border-bottom: 2px solid #fff;
+}
+.HomeView .Protocols .list_s .right .tab .tab_title span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.5rem;
+  height: 3.3125rem;
+  color: var(--white, #fff);
+  text-align: center;
+  /* DM Sans/16px: Medium */
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+}
+.HomeView .Protocols .list_s .right .tab .tab_title .active {
+  background-color: #fff;
+  color: #1d3661;
+}
+.HomeView .Protocols .list_s .right .tab .tab_content .item {
+  display: flex;
+  align-items: center;
+  height: 14.3125rem;
+  color: var(--white, #fff);
+  /* DM Sans/16px: Regular */
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.HomeView .Protocols .list_s .right .tab .tab_content .item img {
+  margin-right: 2.3125rem;
+}
+.HomeView #Roadmap {
+  position: relative;
+  height: 58.6875rem;
+}
+.HomeView #Roadmap .tops .content .box {
+  display: flex;
+  justify-content: space-between;
+}
+.HomeView #Roadmap .tops .content .box .right,
+.HomeView #Roadmap .tops .content .box .left {
+  position: relative;
+  width: 30.625rem;
+}
+.HomeView #Roadmap .tops .content .box .right .code_,
+.HomeView #Roadmap .tops .content .box .left .code_ {
+  position: static !important;
+  opacity: 0.4;
+  margin: 1rem 2rem;
+  margin-top: 3rem;
+  color: #fff;
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView #Roadmap .tops .content .box .right .sequence,
+.HomeView #Roadmap .tops .content .box .left .sequence {
+  left: 0;
+  position: absolute;
+  margin-top: 1rem;
+}
+.HomeView #Roadmap .tops .content .box .right .sequence p,
+.HomeView #Roadmap .tops .content .box .left .sequence p {
+  color: rgba(131, 134, 142, 0.51);
+  font-family: Prompt;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+.HomeView #Roadmap .tops .content .box .right .text h1,
+.HomeView #Roadmap .tops .content .box .left .text h1 {
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView #Roadmap .tops .content .box .right .text,
+.HomeView #Roadmap .tops .content .box .left .text {
+  margin: 7.5rem 0 0 3rem;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul,
+.HomeView #Roadmap .tops .content .box .left .text ul {
+  margin: 1rem 0;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li,
+.HomeView #Roadmap .tops .content .box .left .text ul li {
+  display: flex;
+  position: relative;
+  color: #fff;
+  font-family: IBM Plex Mono;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 170%; /* 27.2px */
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li span,
+.HomeView #Roadmap .tops .content .box .left .text ul li span {
+  margin-left: 0.5rem;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li i,
+.HomeView #Roadmap .tops .content .box .left .text ul li i {
+  position: absolute;
+  top: 0.7rem;
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li .tx,
+.HomeView #Roadmap .tops .content .box .left .text ul li .tx {
+  position: relative;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li .opa,
+.HomeView #Roadmap .tops .content .box .left .text ul li .opa {
+  opacity: 0;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li .tt,
+.HomeView #Roadmap .tops .content .box .left .text ul li .tt {
+  width: 11.875rem;
+  display: flex;
+}
+.HomeView #Roadmap .tops .content .box .right .text ul li .tt em,
+.HomeView #Roadmap .tops .content .box .left .text ul li .tt em {
+  margin-left: 1rem;
+}
+.HomeView #Roadmap .tops .content .box .right .text .cd,
+.HomeView #Roadmap .tops .content .box .left .text .cd {
+  margin-left: 0rem;
+  /* IBM Plex Mono/48px: Bold */
+  font-family: IBM Plex Mono;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: var(--tranching-color-main-gradient-tranching, linear-gradient(270deg, #5d95fa 0%, #00d8fc 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.HomeView #Roadmap .tops .content .box .right .code,
+.HomeView #Roadmap .tops .content .box .left .code {
+  opacity: 0.4;
+  margin-top: 10rem;
+  /* IBM Plex Mono/18px: Medium */
+  font-family: IBM Plex Mono;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 23.4px */
+}
+.HomeView #Roadmap .tops .content .box .right {
+  width: 37.1875rem !important;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs {
+  margin: 1rem 0;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item {
+  display: flex;
+  color: var(--white, #fff);
+  /* IBM Plex Mono/16px: Semi Bold */
+  font-family: IBM Plex Mono;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item .time {
+  width: 11rem;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item .time span {
+  display: inline-block;
+  width: 6.875rem;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item .time em {
+  display: inline-block;
+  height: 1.25rem;
+  margin-left: 0.4rem;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item .txt {
+  width: calc(100% - 10rem);
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item .txt p {
+  position: relative;
+  padding-left: 0.5rem;
+}
+.HomeView #Roadmap .tops .content .box .right .boxs .item .txt p i {
+  position: absolute;
+  display: inline-block;
+  left: -0.2rem;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.HomeView #Roadmap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 23rem;
+  left: 0;
+  width: 23.6875rem;
+  height: 39.8125rem;
+  background-image: url("../static/images/Switch.png");
+  background-size: contain;
+  opacity: 0.1;
+}/*# sourceMappingURL=style.css.map */
