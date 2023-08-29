@@ -1,0 +1,405 @@
+@media (min-width: 375.05px) and (max-width: 480px) {
+  .pc {
+    display: none;
+  }
+  header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    padding: 0px !important;
+    margin: 0 !important;
+    width: 100%;
+  }
+  .mobi {
+    padding: 0 1.5625rem;
+    background: var(--tranching-color-main-black-tranching, #17191E);
+    display: block !important;
+  }
+  .mobi .tops {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem !important;
+  }
+  .mobi .list {
+    padding-bottom: 1.5625rem;
+    animation: dropdown 1s linear;
+    overflow-y: hidden;
+  }
+  @keyframes dropdown {
+    0%{
+      transform: translateY(-370px);
+    }
+    100%{
+      transform: translateY(0);
+    }
+  }
+  .mobi .list ul {
+    display: block;
+  }
+  .mobi .list ul li {
+    text-align: center;
+    margin-right: 0px !important;
+  }
+  .mobi .list ul li .c {
+    justify-content: center;
+  }
+  .mobi .list ul li .c:active{
+  background-image: linear-gradient(to right, #5d95facc, #00d8fccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  }
+  .mobi .list button {
+    width: 100% !important;
+  }
+  .container {
+    padding: 0 1.5625rem;
+  }
+  .HomeView {
+    padding-top: 5rem;
+  }
+  .HomeView .topContainer .top {
+    display: block !important;
+  }
+  .HomeView .topContainer .top .text {
+    width: 100% !important;
+    position: relative;
+  }
+  .HomeView .topContainer .top .text h1 {
+    font-size: 2rem !important;
+  }
+  .HomeView .topContainer .top .text h1 span {
+    display: block;
+  }
+  .HomeView .topContainer .top .text .des {
+    font-size: 1.5rem !important;
+    white-space: pre;
+  }
+  .HomeView .topContainer .top .text button {
+    background: linear-gradient(270deg, #5D95FA 0%, #00D8FC 100%) !important;
+  }
+  .HomeView .topContainer .top .text > div {
+    position: absolute;
+  }
+  .HomeView .topContainer .top .imgs {
+    margin-top: -13rem !important;
+    margin-left: 3rem !important;
+    width: 28.5rem !important;
+  }
+  .HomeView .topContainer .Ecosystem {
+    padding-bottom: 1.1875rem !important;
+    display: block !important;
+  }
+  .HomeView .topContainer .Ecosystem .title_btn {
+    min-width: 8.75rem !important;
+    padding: 0.4604375rem 0.920875rem;
+  }
+  .HomeView .topContainer .Ecosystem .imgs img {
+    width: 100% !important;
+  }
+  .HomeView .topContainer .Ecosystem .world {
+    font-size: 0.875rem !important;
+    color: #fff;
+    margin-top: 1.375rem;
+  }
+  .HomeView .topContainer .Ecosystem .text {
+    margin: 0 !important;
+  }
+  .HomeView .topContainer .Ecosystem .text .title {
+    margin-top: 1rem;
+    font-size: 1.5rem !important;
+  }
+  .HomeView .topContainer .Ecosystem .text .title span {
+    display: block;
+  }
+  .HomeView .topContainer .Ecosystem .text .des {
+    font-size: 0.875rem !important;
+  }
+  .HomeView .topContainer .Ecosystem .text ol li {
+    font-size: 0.875rem !important;
+  }
+  .HomeView #Pools_ .code_top {
+    font-size: 1rem !important;
+    margin-left: 0 !important;
+  }
+  .HomeView #Pools_ .code_ {
+    margin: 1.5rem 2rem !important;
+  }
+  .HomeView #Pools_ .title {
+    margin-top: -2.5rem !important;
+    text-align: left !important;
+  }
+  .HomeView #Pools_ .title span {
+    display: block;
+  }
+  .HomeView #Pools_ .col .imgs {
+    text-align: left !important;
+  }
+  .HomeView #Pools_ .col .text {
+    margin-top: 1rem !important;
+  }
+  .HomeView #Pools_ .code {
+    margin-top: 0.5rem !important;
+  }
+  .HomeView .Pools {
+    padding: 1.5rem !important;
+    padding-bottom: 1.25rem !important;
+    height: auto !important;
+  }
+  .HomeView .Pools .tops {
+    margin-top: -2.5rem !important;
+  }
+  .HomeView .Pools .tops .content .box .tab {
+    padding-top: 4.875rem !important;
+  }
+  .HomeView .Pools .tab .tab_top {
+    display: block !important;
+    border: none !important;
+    width: 15.375rem !important;
+    background-color: #1e1e1e;
+    height: auto !important;
+    position: relative;
+  }
+  .HomeView .Pools .tab .tab_top span {
+    display: block;
+    width: 100% !important;
+    color: #fff !important;
+  }
+  .HomeView .Pools .tab .tab_top .active {
+    background-color: transparent !important;
+  }
+  .HomeView .Pools .tab .tab_top .list {
+    width: 100% !important;
+    height: auto !important;
+    position: absolute;
+    border: none !important;
+    display: block !important;
+    background-color: #1e1e1e;
+  }
+  .HomeView .Pools .tab .tab_top .box {
+    display: flex !important;
+    background-color: #fff !important;
+    height: 3.3125rem !important;
+    color: #1d3661 !important;
+    display: flex;
+    justify-content: space-between !important;
+    padding: 1rem !important;
+  }
+  .HomeView .Pools .tab .tab_top .box img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item:first-child .code {
+    margin-top: 1.5rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item:first-child .row {
+    display: block !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item:first-child .row .text {
+    width: auto !important;
+    margin-left: 0rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item:first-child .row .text ul li {
+    font-size: 0.875rem !important;
+    line-height: 150% !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item:first-child .row .imgs {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item:first-child .row .imgs img {
+    width: 10.3125rem !important;
+  }
+  .HomeView .Pools .content .sequence p {
+    font-size: 1rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .cd {
+    margin-left: 0 !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .code {
+    margin-left: 0px !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .code code {
+    font-size: 1rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item {
+    padding-left: 2rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .title {
+    font-size: 2rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .row {
+    padding-left: 0 !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .row .col {
+    margin-bottom: 2rem !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .row .col .text {
+    min-height: auto !important;
+  }
+  .HomeView .Pools .content .box .tab .tab_text .item .row .col .text {
+    font-size: 0.875rem;
+  }
+  .HomeView .strategy {
+    padding: 1.5rem 2rem !important;
+  }
+  .HomeView .strategy .box {
+    width: 100% !important;
+  }
+  .HomeView .strategy .box h1 {
+    font-size: 2rem !important;
+    text-align: left !important;
+  }
+  .HomeView .strategy .box h1 span {
+    display: block;
+  }
+  .HomeView .strategy .box .text {
+    text-align: left !important;
+    font-size: 1rem !important;
+  }
+  .HomeView .Protocols {
+    background-size: cover !important;
+    padding: 1.5rem !important;
+    display: block !important;
+    height: auto !important;
+  }
+  .HomeView .Protocols .title_btn {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .HomeView .Protocols .title {
+    font-size: 2rem !important;
+  }
+  .HomeView .Protocols .box {
+    display: block !important;
+  }
+  .HomeView .Protocols .box .item {
+    display: block !important;
+    width: 100% !important;
+  }
+  .HomeView .Protocols .box .item .imgs {
+    margin-bottom: 1rem !important;
+    text-align: center;
+  }
+  .HomeView .Protocols .box .item .text {
+    margin-bottom: 1rem !important;
+    margin-left: 0 !important;
+  }
+  .HomeView .Protocols .list_s {
+    padding: 1.875rem 3.125rem !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    background: rgba(30, 30, 30, 0.4) !important;
+  }
+  .HomeView .Protocols .list_s .left {
+    width: 100% !important;
+  }
+  .HomeView .Protocols .list_s .left h2 {
+    font-size: 2rem !important;
+  }
+  .HomeView .Protocols .list_s .right {
+    width: 100% !important;
+  }
+  .HomeView .Protocols .list_s .right .item {
+    width: 100% !important;
+    flex-direction: column;
+    text-align: center;
+    height: auto !important;
+  }
+  .HomeView .Protocols .list_s .right .item img {
+    margin: 2rem 0;
+    margin-right: 0 !important;
+  }
+  .HomeView .Protocols .list_s .right .tab .tab_title {
+    width: 100%;
+    display: block !important;
+    border: none !important;
+    position: relative;
+  }
+  .HomeView .Protocols .list_s .right .tab .tab_title .box {
+    display: flex !important;
+    width: 100% !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .HomeView .Protocols .list_s .right .tab .tab_title .list {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(30, 30, 30);
+  }
+  .HomeView .Protocols .list_s .right .tab .tab_title .list span {
+    width: 100% !important;
+    background-color: transparent !important;
+    color: #fff;
+  }
+  .HomeView #Roadmap:after {
+    display: none !important;
+  }
+  .HomeView #Roadmap .tops .content .box {
+    display: block !important;
+  }
+  .HomeView #Roadmap .tops .content .box .right .code {
+    font-size: 0.875rem !important;
+    margin-top: 2rem !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left, .HomeView #Roadmap .tops .content .box .right {
+    width: 100% !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left .text, .HomeView #Roadmap .tops .content .box .right .text {
+    margin: 3.5rem 0 0 3rem !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left .text ul, .HomeView #Roadmap .tops .content .box .right .text ul {
+    margin-top: 2.5rem !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left .text ul li, .HomeView #Roadmap .tops .content .box .right .text ul li {
+    font-size: 0.875rem !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left .boxs .item, .HomeView #Roadmap .tops .content .box .right .boxs .item {
+    display: block !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left .boxs .item > div, .HomeView #Roadmap .tops .content .box .right .boxs .item > div {
+    margin-bottom: 1.6875rem !important;
+    width: 100% !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left .boxs .item .time, .HomeView #Roadmap .tops .content .box .right .boxs .item .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .HomeView #Roadmap .tops .content .box .left .boxs .item .txt, .HomeView #Roadmap .tops .content .box .right .boxs .item .txt {
+    font-size: 0.875rem !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left h1, .HomeView #Roadmap .tops .content .box .left .cd, .HomeView #Roadmap .tops .content .box .right h1, .HomeView #Roadmap .tops .content .box .right .cd {
+    font-size: 2rem !important;
+  }
+  .HomeView #Roadmap .tops .content .box .left h1 span, .HomeView #Roadmap .tops .content .box .left .cd span, .HomeView #Roadmap .tops .content .box .right h1 span, .HomeView #Roadmap .tops .content .box .right .cd span {
+    display: block !important;
+  }
+  .HomeView #Roadmap .sequence {
+    margin-top: -2rem !important;
+  }
+  .HomeView #Roadmap li {
+    margin: 0.3125rem 0 !important;
+  }
+  .HomeView #Roadmap .cd {
+    margin-top: 2rem !important;
+  }
+  .HomeView #Roadmap .code {
+    margin-top: 2rem !important;
+    font-size: 1rem !important;
+  }
+  footer {
+    padding-top: 1.25rem !important;
+    display: block !important;
+  }
+  footer p {
+    margin-bottom: 1rem !important;
+  }
+  footer a {
+    margin-left: 0 !important;
+    margin-right: 1.25rem !important;
+  }
+}/*# sourceMappingURL=style.css.map */

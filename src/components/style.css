@@ -2,38 +2,33 @@ header {
   margin: 1.5625rem 0;
   display: flex;
 }
-
+header .mobi {
+  display: none;
+}
 header nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
-header nav>a {
+header nav > a {
   width: 9.625rem;
   display: flex;
 }
-
-header nav>a img {
+header nav > a img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
-
 header ul {
   display: flex;
   align-items: center;
 }
-
 header ul li:hover .child {
   display: block;
 }
-
 header ul li {
   margin-right: 3.75rem;
 }
-
-header ul li a,
-header ul li div {
+header ul li a, header ul li div {
   font-family: Prompt;
   color: var(--light-blue, #E8F0F9);
   font-size: 1rem;
@@ -42,9 +37,7 @@ header ul li div {
   line-height: normal;
   position: relative;
 }
-
-header ul li a .c,
-header ul li div .c {
+header ul li a .c, header ul li div .c {
   display: flex;
   align-items: center;
   height: 3.75rem;
@@ -55,14 +48,10 @@ header ul li a .c:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-header ul li a img,
-header ul li div img {
+header ul li a img, header ul li div img {
   margin-left: 0.625rem;
 }
-
-header ul li a .child,
-header ul li div .child {
+header ul li a .child, header ul li div .child {
   display: none;
   border-radius: 10px;
   background: #FFF;
@@ -77,9 +66,7 @@ header ul li div .child {
   gap: 10px;
   z-index: 99;
 }
-
-header ul li a .child div,
-header ul li div .child div {
+header ul li a .child div, header ul li div .child div {
   font-family: Prompt;
   color: var(--light-blue, #E8F0F9);
   font-size: 1rem;
@@ -94,22 +81,17 @@ header ul li div .child div {
   text-align: center;
   font-size: 1.125rem;
 }
-
-header ul li a .child div:not(:last-child),
-header ul li div .child div:not(:last-child) {
+header ul li a .child div:not(:last-child), header ul li div .child div:not(:last-child) {
   margin-bottom: 0.625rem;
 }
-
-header ul li a .child div:hover,
-header ul li div .child div:hover {
+header ul li a .child div:hover, header ul li div .child div:hover {
   color: var(--empty-text-field, #5C468B);
 }
-
 header button {
   width: 14.5rem;
   height: 3rem;
   border: 1px solid #FFF;
-  background: linear-gradient(270deg, #5d95facc 0%, #00d8fccc 100%);
+  background: linear-gradient(270deg, rgba(93, 149, 250, 0.8) 0%, rgba(0, 216, 252, 0.8) 100%);
   color: var(--white, #FFF);
   font-family: IBM Plex Mono;
   font-size: 16px;
@@ -127,7 +109,6 @@ footer {
   padding-bottom: 2.375rem !important;
   margin-top: 0 !important;
 }
-
 footer p {
   color: var(--light-blue, #E8F0F9);
   font-family: IBM Plex Mono;
@@ -136,7 +117,6 @@ footer p {
   font-weight: 700;
   line-height: normal;
 }
-
 footer a {
   margin-left: 1.25rem;
-}
+}/*# sourceMappingURL=style.css.map */

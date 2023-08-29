@@ -2,8 +2,32 @@ import { useState } from "react";
 import "../style.css";
 
 const HomeView = () => {
-  const [index, setIndex] = useState(0);
+  const [index, ] = useState(0);
   const [index_, setIndex_] = useState(0);
+  const [pools_o, setPools_o] = useState({
+    value: 0,
+    text: "About",
+    num: 26,
+  });
+  const [openPools, setOpenPools] = useState(false);
+  const [openPools_, setOpenPools_] = useState(false);
+  const [text, setText] = useState('50K');
+  const Sequence = ({ num }) => {
+    const elements = [];
+    for (let index = 0; index < num; index++) {
+      elements.push(<p key={index}>{index + 1}</p>);
+    }
+    return <div>{elements}</div>;
+  };
+  const changeTab = (num, key, value, text) => {
+    setPools_o({
+      ...pools_o,
+      value,
+      text,
+      num,
+    });
+    setOpenPools(false);
+  };
   return (
     <section className="HomeView">
       <div className="container topContainer">
@@ -36,7 +60,9 @@ const HomeView = () => {
             </div>
           </div>
           <div className="text">
-            <h2 className="title">Tranching Derivates Ecosystem </h2>
+            <h2 className="title">
+              Tranching <span>Derivates</span> Ecosystem {"{"}
+            </h2>
             <p className="des">
               Tranching Protocol is an innovated Defi Protocol introduces
               Tranching Pool as an ultimate solution for investment managers to
@@ -79,6 +105,7 @@ const HomeView = () => {
                 <span className="A4CF27">Tokenomics</span>
               </li>
             </ol>
+            <p className="world">#Tranching The World {"}"}</p>
           </div>
         </div>
       </div>
@@ -92,59 +119,55 @@ const HomeView = () => {
           </p>
           <div className="content">
             <div className="sequence">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
-              <p>4</p>
-              <p>5</p>
-              <p>6</p>
-              <p>7</p>
-              <p>8</p>
-              <p>9</p>
-              <p>10</p>
-              <p>11</p>
-              <p>12</p>
-              <p>13</p>
-              <p>14</p>
-              <p>15</p>
-              <p>16</p>
-              <p>17</p>
-              <p>18</p>
+              <Sequence num={pools_o.num} />
             </div>
             <div className="box">
               <div className="tab">
                 <div className="tab_top">
                   <span
-                    className={index === 0 ? "active" : ""}
+                    className="box active"
                     onClick={() => {
-                      setIndex(0);
+                      setOpenPools(!openPools);
                     }}
                   >
-                    About
+                    {pools_o.text}
+                    <img src={require("../../static/images/sel.png")} alt=""/>
                   </span>
-                  <span
-                    className={index === 1 ? "active" : ""}
-                    onClick={() => {
-                      setIndex(1);
-                    }}
-                  >
-                    Risk & Earnings
-                  </span>
-                  <span
-                    className={index === 2 ? "active" : ""}
-                    onClick={() => {
-                      setIndex(2);
-                    }}
-                  >
-                    Investment Direction
-                  </span>
+                  {openPools ? (
+                    <div className="list">
+                      <span
+                        className={index === 0 ? "active" : ""}
+                        onClick={() => {
+                          changeTab(26, "pools_o", 0, "About");
+                        }}
+                      >
+                        About
+                      </span>
+                      <span
+                        className={index === 1 ? "active" : ""}
+                        onClick={() => {
+                          changeTab(34, "pools_o", 1, "Risk & Earnings");
+                        }}
+                      >
+                        Risk & Earnings
+                      </span>
+                      <span
+                        className={index === 2 ? "active" : ""}
+                        onClick={() => {
+                          changeTab(21, "pools_o", 2, "Investment Direction");
+                        }}
+                      >
+                        Investment Direction
+                      </span>
+                    </div>
+                  ) : null}
                 </div>
                 <div className="tab_text">
                   <div
                     className="item"
-                    style={{ display: index === 0 ? "block" : "none" }}
+                    style={{ display: pools_o.value === 0 ? "block" : "none" }}
                   >
-                    <h2 className="title">[Tranching Pool]</h2>
+                    <h2 className="title">{"{"}[Tranching Pool]</h2>
                     <div className="row">
                       <div className="col imgs">
                         <img
@@ -215,9 +238,9 @@ const HomeView = () => {
                   </div>
                   <div
                     className="item"
-                    style={{ display: index === 1 ? "block" : "none" }}
+                    style={{ display: pools_o.value === 1 ? "block" : "none" }}
                   >
-                    <h2 className="title">[Risk & Earnings]</h2>
+                    <h2 className="title">{"{"}[Risk & Earnings]</h2>
                     <div className="row">
                       <div className="col">
                         <p className="imgs">
@@ -343,9 +366,9 @@ const HomeView = () => {
                   </div>
                   <div
                     className="item"
-                    style={{ display: index === 2 ? "block" : "none" }}
+                    style={{ display: pools_o.value === 2 ? "block" : "none" }}
                   >
-                    <h2 className="title">[Investment Direction]</h2>
+                    <h2 className="title">{"{"}[Investment Direction]</h2>
                     <div className="row">
                       <div className="col">
                         <p className="imgs">
@@ -414,7 +437,10 @@ const HomeView = () => {
       </div>
       <div className="container strategy">
         <div className="box">
-          <h1>Tranching Protocol as a new ‘staking strategy’</h1>
+          <h1>
+            <span>Tranching</span> <span>Protocol as a </span>
+            <span>new ‘staking</span> strategy’
+          </h1>
           <div className="text">
             <p>
               <span className="FDC642">Investors/wealth management</span> teams
@@ -458,7 +484,10 @@ const HomeView = () => {
               <div className="tab">
                 <div className="tab_text">
                   <div className="item">
-                    <h2 className="title">Liquidity of Risk/Earnings</h2>
+                    <h2 className="title">
+                      <span>Liquidity of</span>
+                      <span> Risk/</span>Earnings{"{"}
+                    </h2>
                     <p className="code_top">
                       <span className="FDC642">&lt; TVL is key</span> for all{" "}
                       <span className="E72D9F0">DeFi</span>{" "}
@@ -533,13 +562,20 @@ const HomeView = () => {
                         <div className="text">
                           <p>
                             &lt; When there is a loss for the LPs of a certain
-                            Defi product, <span className="E72D9F0">superior Tranching pools</span> will have
-                            majority of the loss even up to 100% of the loss,
-                            and vice versa.
+                            Defi product,{" "}
+                            <span className="E72D9F0">
+                              superior Tranching pools
+                            </span>{" "}
+                            will have majority of the loss even up to 100% of
+                            the loss, and vice versa.
                             <br />
                             <br />
                             <br />
-                            Therefore, the <span className="FDC642">wealth management</span> team and <span className="DBA0DB">investors</span>
+                            Therefore, the{" "}
+                            <span className="FDC642">
+                              wealth management
+                            </span>{" "}
+                            team and <span className="DBA0DB">investors</span>
                             have more options to manage their portfolios &gt;
                           </p>
                         </div>
@@ -627,29 +663,48 @@ const HomeView = () => {
             <div className="tab">
               <div className="tab_title">
                 <span
-                  className={index_ === 0 ? "active" : ""}
+                  className="box active"
                   onClick={() => {
-                    setIndex_(0);
+                    setOpenPools_(!openPools_);
                   }}
                 >
-                  50K
+                  {text}
+                  <img src={require("../../static/images/sel.png")} alt=""/>
                 </span>
-                <span
-                  className={index_ === 1 ? "active" : ""}
-                  onClick={() => {
-                    setIndex_(1);
-                  }}
-                >
-                  Risk-Free
-                </span>
-                <span
-                  className={index_ === 2 ? "active" : ""}
-                  onClick={() => {
-                    setIndex_(2);
-                  }}
-                >
-                  Decentralized
-                </span>
+                {openPools_ ? (
+                  <div className="list">
+                    <span
+                      className={index_ === 0 ? "active" : ""}
+                      onClick={() => {
+                        setIndex_(0);
+                        setText('50K')
+                        setOpenPools_(false)
+                      }}
+                    >
+                      50K
+                    </span>
+                    <span
+                      className={index_ === 1 ? "active" : ""}
+                      onClick={() => {
+                        setIndex_(1);
+                        setText('5Risk-Free0K')
+                        setOpenPools_(false)
+                      }}
+                    >
+                      Risk-Free
+                    </span>
+                    <span
+                      className={index_ === 2 ? "active" : ""}
+                      onClick={() => {
+                        setIndex_(2);
+                        setText('Decentralized');
+                        setOpenPools_(false)
+                      }}
+                    >
+                      Decentralized
+                    </span>
+                  </div>
+                ) : null}
               </div>
               <div className="tab_content">
                 <div
@@ -721,7 +776,10 @@ const HomeView = () => {
                   <p>12</p>
                 </div>
                 <div className="text">
-                  <h1>Layer Design for Tranching Protocol {"{"}</h1>
+                  <h1>
+                    <span>Layer Design</span> <span>for</span>{" "}
+                    <span>Tranching</span> Protocol {"{"}
+                  </h1>
                   <ul>
                     <li>
                       <p className="tx">
@@ -790,7 +848,9 @@ const HomeView = () => {
                   <p>12</p>
                 </div>
                 <div className="text">
-                  <h1>Tranching Protocol ‘Roadmap’ {"{"}</h1>
+                  <h1>
+                    <span>Tranching</span> <span>Protocol</span> ‘Roadmap’ {"{"}
+                  </h1>
                   <div className="boxs">
                     <div className="item">
                       <div className="time">

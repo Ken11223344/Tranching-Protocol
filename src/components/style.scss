@@ -1,6 +1,10 @@
 header{
     margin: 1.5625rem 0;
     display: flex;
+    // display: none;
+    .mobi{
+        display: none;
+    }
     nav{
         width: 100%;
         display: flex;
