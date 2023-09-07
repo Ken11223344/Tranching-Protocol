@@ -1008,7 +1008,7 @@ const HomeView = () => {
         <div className="partenrsContent">
           <div className="box1">
             <div>
-                <img src={require("../../static/images/Image-1.png")} alt="Animoca Brands " style={{width:250,height:87}}/>
+                <img src={require("../../static/images/Image-1.png")} alt="Animoca Brands " style={{width:252,height:79}}/>
             </div>
           </div>
           <div className="box1">
@@ -1018,7 +1018,7 @@ const HomeView = () => {
           </div>
           <div className="box1">
             <div>
-            <img src={require("../../static/images/Image-2.png")} alt="" style={{width:293,height:49}}/>
+            <img src={require("../../static/images/Image-2.png")} alt="" style={{width:290,height:44}}/>
             </div>
           </div>
           <div className="box1">
@@ -1028,7 +1028,7 @@ const HomeView = () => {
           </div>
           <div className="box1">
             <div>
-              <img src={require("../../static/images/Image-4.png")} alt="" style={{width:269,height:78}}/>
+              <img src={require("../../static/images/Image-4.png")} alt="" style={{width:222,height:67}}/>
             </div>
           </div>
           <div className="box1">
@@ -1038,12 +1038,12 @@ const HomeView = () => {
           </div>
           <div className="box1 height95">
             <div>
-              <img src={require("../../static/images/Image-14.png")} alt="" style={{width:206,height:128}}/>
+              <img src={require("../../static/images/Image-14.png")} alt="" style={{width:148,height:128}}/>
             </div>
           </div>
           <div className="box1">
             <div>
-            <img src={require("../../static/images/Image-16.png")} alt="" style={{width:250,height:58}}/>
+            <img src={require("../../static/images/Image-16.png")} alt="" style={{width:237,height:85}}/>
             </div>
           </div>
         </div>
