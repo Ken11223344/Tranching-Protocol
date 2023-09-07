@@ -1008,42 +1008,42 @@ const HomeView = () => {
         <div className="partenrsContent">
           <div className="box1">
             <div>
-                <img src={require("../../static/images/Image-1.png")} alt="Animoca Brands " style={{width:216,height:70}}/>
+                <img src={require("../../static/images/Image1.png")} alt="" />
             </div>
           </div>
           <div className="box1">
             <div>
-              <img src={require("../../static/images/Image.png")} alt="" style={{width:175,height:87}}/>
+              <img src={require("../../static/images/Image2.png")} alt=""/>
             </div>
           </div>
           <div className="box1">
             <div>
-            <img src={require("../../static/images/Image-2.png")} alt="" style={{width:290,height:44}}/>
+            <img src={require("../../static/images/Image3.png")} alt="" />
             </div>
           </div>
           <div className="box1">
             <div>
-                <img src={require("../../static/images/Image-3.png")} alt="Animoca Brands " style={{width:216,height:70}}/>
+                <img src={require("../../static/images/Image4.png")} alt="Animoca Brands " />
             </div>
           </div>
           <div className="box1">
             <div>
-              <img src={require("../../static/images/Image-4.png")} alt="" style={{width:222,height:67}}/>
+              <img src={require("../../static/images/Image5.png")} alt="" />
             </div>
           </div>
           <div className="box1">
             <div>
-            <img src={require("../../static/images/Image-9.png")} alt="" style={{width:269,height:125}}/>
+            <img src={require("../../static/images/Image6.png")} alt=""/>
             </div>
           </div>
           <div className="box1 height95">
             <div>
-              <img src={require("../../static/images/Image-14.png")} alt="" style={{width:148,height:101}}/>
+              <img src={require("../../static/images/Image7.png")} alt="" />
             </div>
           </div>
           <div className="box1">
             <div>
-            <img src={require("../../static/images/Image-16.png")} alt="" style={{width:237,height:85}}/>
+            <img src={require("../../static/images/Image8.png")} alt="" />
             </div>
           </div>
         </div>
