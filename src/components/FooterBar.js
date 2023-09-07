@@ -5,7 +5,7 @@ export default function FooterBar() {
       id:3,
       title:'twitter',
       text:"Connect me",
-      path:'',
+      path:'https://twitter.com/TranchingPro',
       img:require('../static/images/mdi_twitter.png')
     },
   ]

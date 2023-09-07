@@ -51,7 +51,7 @@ const NavBar = ({ routes }) => {
             );
           })}
         </ul>
-        <button>Embrace Tranching Now</button>
+        {/* <button>Embrace Tranching Now</button> */}
       </nav>
       <nav className="mobi">
         <div className="tops">
@@ -110,7 +110,7 @@ const NavBar = ({ routes }) => {
                 );
               })}
             </ul>
-            <button>Embrace Tranching Now</button>
+            {/* <button>Embrace Tranching Now</button> */}
           </div>
         ) : null}
       </nav>

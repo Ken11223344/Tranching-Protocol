@@ -1,0 +1,25 @@
+.DocumentView {
+    overflow: hidden;
+}
+
+.DocumentView .topContainer {
+    background: linear-gradient(180deg, #0f0f0f 0%, #123d46 100%);
+    height: 8004px;
+}
+
+/* .FeaturesView .topContainer .top {
+    display: flex;
+  } */
+.DocumentView .topContainer .top .text {
+    width: 44.125rem;
+}
+
+.DocumentView .topContainer .top .text h1 {
+    /* IBM Plex Mono/56px: Bold */
+    font-family: IBM Plex Mono;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--tranching-color-main-gradient-tranching, #fff);
+}

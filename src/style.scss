@@ -164,6 +164,7 @@
                     .active{
                         background-color: transparent!important;
                     }
+                    
                     .list{
                         width: 100%!important;
                         height: auto!important;
@@ -171,6 +172,9 @@
                         border: none!important;
                         display: block!important;
                         background-color: #1e1e1e;
+                    }
+                    .pcList{
+                        display: none!important;
                     }
                     .box{
                         display: flex!important;
@@ -337,6 +341,9 @@
                                 background-color: transparent!important;
                                 color: #fff;
                             }
+                        }
+                        .pcList{
+                            display: none!important;
                         }
                     }
 

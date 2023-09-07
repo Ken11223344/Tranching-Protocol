@@ -2,19 +2,20 @@ import { useState } from "react";
 import "../style.css";
 
 const HomeView = () => {
-  const [index, ] = useState(0);
+  const [index] = useState(0);
   const [index_, setIndex_] = useState(0);
   const [pools_o, setPools_o] = useState({
     value: 0,
     text: "About",
-    num: 26,
+    num: 14,
   });
   const [openPools, setOpenPools] = useState(false);
   const [openPools_, setOpenPools_] = useState(false);
   const [text, setText] = useState('50K');
   const Sequence = ({ num }) => {
     const elements = [];
-    for (let index = 0; index < num; index++) {
+    const maxElements = Math.min (num,18)
+    for (let index = 0; index < maxElements; index++) {
       elements.push(<p key={index}>{index + 1}</p>);
     }
     return <div>{elements}</div>;
@@ -39,7 +40,7 @@ const HomeView = () => {
             </h1>
             <p className="des">For Decentralised Derivatives</p>
             <div>
-              <button>Embrace Tranching Now</button>
+              {/* <button>Embrace Tranching Now</button> */}
             </div>
           </div>
           <div className="imgs">
@@ -112,14 +113,14 @@ const HomeView = () => {
       <div className="container Pools">
         <div className="tops">
           <button className="title_btn">Tranching Pools</button>
-          <p className="code_">
+          {/* <p className="code_">
             <code>
               <span className="FF5857">Print</span>("Hello World")
             </code>
-          </p>
+          </p> */}
           <div className="content">
             <div className="sequence">
-              <Sequence num={pools_o.num} />
+              <Sequence num={18} />
             </div>
             <div className="box">
               <div className="tab">
@@ -133,6 +134,32 @@ const HomeView = () => {
                     {pools_o.text}
                     <img src={require("../../static/images/sel.png")} alt=""/>
                   </span>
+                  <div className="list pcList">
+                      <span
+                        className={pools_o.value === 0 ? "active" : ""}
+                        onClick={() => {
+                          changeTab(26, "pools_o", 0, "About");
+                        }}
+                      >
+                        About
+                      </span>
+                      <span
+                        className={pools_o.value === 1 ? "active" : ""}
+                        onClick={() => {
+                          changeTab(34, "pools_o", 1, "Risk & Earnings");
+                        }}
+                      >
+                        Risk & Earnings
+                      </span>
+                      <span
+                        className={pools_o.value === 2 ? "active" : ""}
+                        onClick={() => {
+                          changeTab(21, "pools_o", 2, "Investment Direction");
+                        }}
+                      >
+                        Investment Direction
+                      </span>
+                    </div>
                   {openPools ? (
                     <div className="list">
                       <span
@@ -229,12 +256,12 @@ const HomeView = () => {
                         <p className="f">{"}"}</p>
                       </div>
                     </div>
-                    <p className="code">
+                    {/* <p className="code">
                       <code>
                         <span className="E72D9F0">var 1</span> = Tranching Pool
                         About
                       </code>
-                    </p>
+                    </p> */}
                   </div>
                   <div
                     className="item"
@@ -357,12 +384,12 @@ const HomeView = () => {
                       </div>
                     </div>
                     <p className="cd">{"}"}</p>
-                    <p className="code">
+                    {/* <p className="code">
                       <code>
                         <span className="E72D9F0">var 2</span> = Tranching Pool
                         Risk & Earnings About
                       </code>
-                    </p>
+                    </p> */}
                   </div>
                   <div
                     className="item"
@@ -422,12 +449,12 @@ const HomeView = () => {
                       </div>
                     </div>
                     <p className="cd">{"}"}</p>
-                    <p className="code">
+                    {/* <p className="code">
                       <code>
                         <span className="E72D9F0">var 3</span> = Tranching Pool
                         Risk & Earnings About
                       </code>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -458,11 +485,11 @@ const HomeView = () => {
       <div className="container Pools" id="Pools_">
         <div className="tops">
           <button className="title_btn">Tranching Pools</button>
-          <p className="code_">
+          {/* <p className="code_">
             <code>
               <span className="FF5857">Print</span>("Hello World")
             </code>
-          </p>
+          </p> */}
           <div className="content">
             <div className="sequence">
               <p>1</p>
@@ -582,12 +609,12 @@ const HomeView = () => {
                       </div>
                     </div>
                     <p className="cd">{"}"}</p>
-                    <p className="code">
+                    {/* <p className="code">
                       <code>
                         <span className="E72D9F0">var 4</span> = Liquidity of
                         Risk & Earnings
                       </code>
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
@@ -671,6 +698,38 @@ const HomeView = () => {
                   {text}
                   <img src={require("../../static/images/sel.png")} alt=""/>
                 </span>
+                <div className="list pcList">
+                    <span
+                      className={index_ === 0 ? "active" : ""}
+                      onClick={() => {
+                        setIndex_(0);
+                        setText('50K')
+                        setOpenPools_(false)
+                      }}
+                    >
+                      50K
+                    </span>
+                    <span
+                      className={index_ === 1 ? "active" : ""}
+                      onClick={() => {
+                        setIndex_(1);
+                        setText('5Risk-Free0K')
+                        setOpenPools_(false)
+                      }}
+                    >
+                      Risk-Free
+                    </span>
+                    <span
+                      className={index_ === 2 ? "active" : ""}
+                      onClick={() => {
+                        setIndex_(2);
+                        setText('Decentralized');
+                        setOpenPools_(false)
+                      }}
+                    >
+                      Decentralized
+                    </span>
+                  </div>
                 {openPools_ ? (
                   <div className="list">
                     <span
@@ -756,11 +815,11 @@ const HomeView = () => {
           <div className="content">
             <div className="box">
               <div className="left">
-                <p className="code_">
+                {/* <p className="code_">
                   <code>
                     <span className="FF5857">Print</span>("Hello World")
                   </code>
-                </p>
+                </p> */}
                 <div className="sequence">
                   <p>1</p>
                   <p>2</p>
@@ -818,21 +877,21 @@ const HomeView = () => {
                     </li>
                   </ul>
                   <p className="cd">{"}"}</p>
-                  <p className="code">
+                  {/* <p className="code">
                     <code>
                       <span className="E72D9F0">
                         var 5 = Layer Design for Tranching
                       </span>
                     </code>
-                  </p>
+                  </p> */}
                 </div>
               </div>
               <div className="right">
-                <p className="code_">
+                {/* <p className="code_">
                   <code>
                     <span className="FF5857">Print</span>("Goole Technology")
                   </code>
-                </p>
+                </p> */}
                 <div className="sequence">
                   <p>1</p>
                   <p>2</p>
@@ -930,16 +989,61 @@ const HomeView = () => {
                     </div>
                   </div>
                   <p className="cd">{"}"}</p>
-                  <p className="code">
+                  {/* <p className="code">
                     <code>
                       <span className="E72D9F0">var 6</span>{" "}
                       <span className="ffffff">
                         = Tranching Protocol Roadmap
                       </span>
                     </code>
-                  </p>
+                  </p> */}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container Partners">
+        <button>Tranching Partners</button>
+        <div className="partenrsContent">
+          <div className="box1">
+            <div>
+                <img src={require("../../static/images/Image-1.png")} alt="Animoca Brands " style={{width:250,height:87}}/>
+            </div>
+          </div>
+          <div className="box1">
+            <div>
+              <img src={require("../../static/images/Image.png")} alt="" style={{width:175,height:87}}/>
+            </div>
+          </div>
+          <div className="box1">
+            <div>
+            <img src={require("../../static/images/Image-2.png")} alt="" style={{width:293,height:49}}/>
+            </div>
+          </div>
+          <div className="box1">
+            <div>
+                <img src={require("../../static/images/Image-3.png")} alt="Animoca Brands " style={{width:269,height:78}}/>
+            </div>
+          </div>
+          <div className="box1">
+            <div>
+              <img src={require("../../static/images/Image-4.png")} alt="" style={{width:269,height:78}}/>
+            </div>
+          </div>
+          <div className="box1">
+            <div>
+            <img src={require("../../static/images/Image-9.png")} alt="" style={{width:269,height:125}}/>
+            </div>
+          </div>
+          <div className="box1 height95">
+            <div>
+              <img src={require("../../static/images/Image-14.png")} alt="" style={{width:206,height:128}}/>
+            </div>
+          </div>
+          <div className="box1">
+            <div>
+            <img src={require("../../static/images/Image-16.png")} alt="" style={{width:250,height:58}}/>
             </div>
           </div>
         </div>

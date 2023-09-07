@@ -42,10 +42,9 @@ header ul li a .c, header ul li div .c {
   align-items: center;
   height: 3.75rem;
 }
-
 header ul li a .c:hover {
   background-image: linear-gradient(to right, #5d95facc, #00d8fccc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 header ul li a img, header ul li div img {

@@ -1,5 +1,9 @@
 import React,{lazy} from "react";
 const HomeView = lazy(() => import('../views/home/index'));
+const FeaturesView = lazy(() => import('../views/Features/index'));
+const DocumentView = lazy(() => import('../views/Document/index'));
+const RoadmapView = lazy(() => import('../views/Road map/index'));
+const PartnersView = lazy(() => import('../views/Partners/index'));
 
 const RouterList = [
     {
@@ -18,25 +22,50 @@ const RouterList = [
     },
     {
         key: "Features",
-        path:'',
+        path:'/Features',
         title:'Features',
-        isRouter:false,
-        child:[]
+        isRouter:true,
+        isLink:true,
+        child:[],
+        meta:{
+            title:'Features',
+            keywords:'keywords',
+            description:'description'
+        },
+        element:<FeaturesView/>
     },
     {
-        key: "Governance Token",
-        path:'',
-        title:'Governance Token',
-        isRouter:false,
-        child:[ ]
+        key: "Document",
+        path:'/Document',
+        title:'Document',
+        isRouter:true,
+        isLink:true,
+        child:[],
+        meta:{
+            title:'Document',
+            keywords:'keywords',
+            description:'description'
+        },
+        element:<DocumentView/>
     },
     {
         key: "Roadmap",
-        path:'',
+        path:'/Roadmap',
         title:'Roadmap',
-        isRouter:false,
-        child:[]
+        isRouter:true,
+        isLink:true,
+        child:[],
+        element:<RoadmapView/>
     },
+    {
+        key:'Partners',
+        path:'/Partners',
+        title:'Partners',
+        isRouter:true,
+        isLink:true,
+        child:[],
+        element:<PartnersView/>
+    }
 ]
 
 export default RouterList;

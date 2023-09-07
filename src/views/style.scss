@@ -578,8 +578,14 @@
                 width: 37.5rem;
                 .tab {
                     .tab_title {
+                        .box{
+                            display: none;
+                        }
                         display: flex;
                         border-bottom: 2px solid #fff;
+                        .pcList{
+                            display: flex;
+                        }
                         span {
                             cursor: pointer;
                             display: flex;

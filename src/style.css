@@ -44,12 +44,6 @@
   .mobi .list ul li .c {
     justify-content: center;
   }
-  .mobi .list ul li .c:active{
-  background-image: linear-gradient(to right, #5d95facc, #00d8fccc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  }
   .mobi .list button {
     width: 100% !important;
   }
@@ -176,6 +170,9 @@
     border: none !important;
     display: block !important;
     background-color: #1e1e1e;
+  }
+  .HomeView .Pools .tab .tab_top .pcList {
+    display: none !important;
   }
   .HomeView .Pools .tab .tab_top .box {
     display: flex !important;
@@ -335,6 +332,9 @@
     background-color: transparent !important;
     color: #fff;
   }
+  .HomeView .Protocols .list_s .right .tab .tab_title .pcList {
+    display: none !important;
+  }
   .HomeView #Roadmap:after {
     display: none !important;
   }
@@ -390,6 +390,40 @@
   .HomeView #Roadmap .code {
     margin-top: 2rem !important;
     font-size: 1rem !important;
+  }
+  .HomeView .Partners .partenrsContent{
+    width: 100% !important;
+    height: 400px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between!important;
+  }
+  .HomeView .Partners .partenrsContent .box1{
+    width: 48%;
+    flex-basis: calc(50% - 10px) !important; 
+    margin-bottom: 20px; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+  }
+  .HomeView .Partners{
+    height: auto!important;
+    min-height: 36.6875rem!important;
+  }
+  .HomeView .Partners .partenrsContent{
+    height: auto!important;
+
+  }
+  .HomeView .Partners .partenrsContent .box1 img{
+    width: 85%!important;
+    /* height: auto!important; */
+    object-fit: contain;
+  }
+  .HomeView .Partners .partenrsContent .box1 >div{
+    margin: 0!important;
+  }
+  .HomeView .Partners .partenrsContent  .height95 img{
+    height: 80px!important;
   }
   footer {
     padding-top: 1.25rem !important;
