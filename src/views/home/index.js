@@ -1043,7 +1043,7 @@ const HomeView = () => {
           </div>
           <div className="box1">
             <div>
-            <img src={require("../../static/images/Image8.png")} alt="" />
+            <img src={require("../../static/images/Flurry Capital-17.png")} alt="" style={{width:158,height:56}}/>
             </div>
           </div>
         </div>
