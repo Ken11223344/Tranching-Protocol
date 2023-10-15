@@ -895,8 +895,8 @@
 
 .HomeView .Partners {
   height: 36.6875rem;
-  background-color: #1e1e1e;
   background-image: url(../static/images/Parbgc.png);
+  background-size: cover;
 }
 
 .HomeView .Partners button {
