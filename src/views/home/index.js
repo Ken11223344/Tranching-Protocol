@@ -1051,11 +1051,6 @@ const HomeView = () => {
             <img src={require("../../static/images/CHarm.jpg")} alt="" style={{width:158,height:56}}/>
             </div>
           </div>
-          <div className="box1">
-            <div>
-            <img src={require("../../static/images/photo_2023-10-15_16-12-02(1).jpg")} alt="" style={{height:90}}/>
-            </div>
-          </div>
         </div>
       </div>
     </section>
