@@ -974,7 +974,7 @@ const HomeView = () => {
                     </div>
                     <div className="item">
                       <div className="time">
-                        <span className="FF5857">2023 Q1</span>
+                        <span className="FF5857">2024 Q1</span>
                         <em>...</em>
                       </div>
                       <div className="txt">
